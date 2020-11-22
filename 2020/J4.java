@@ -8,24 +8,19 @@ public class J4
 		String a = s.next();
 		String b = s.next();
 		int cycle = a.indexOf(b);
-		if (cycle >= 0)
+		for (int i = 0; i < b.length(); i++)
 		{
-			System.out.print("yes");
-		}
-		else
-		{
-			for (int i = 0; i < b.length(); i++)
+			if (cycle >= 0)
 			{
-				String n = b.substring(1, b.length());
-				b = n + b.charAt(0);
-				cycle = a.indexOf(b);
-				if (cycle >= 0)
-				{
-					System.out.print("yes");
-					System.exit(0);
-				}
+				break;
 			}
-			System.out.print("no");
+			String n = b.substring(1, b.length());
+			b = n + b.charAt(0);
+			cycle = a.indexOf(b);
 		}
+		if (cycle >= 0)
+			System.out.print("yes");
+		else
+			System.out.print("no");
 	}
 }
