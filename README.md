@@ -1,2 +1,2 @@
 # Waterloo-CCC
-Solutions to past Waterloo CEMC-CCC contests
+My solutions to past [Waterloo CEMC-CCC](https://cemc.uwaterloo.ca/contests/computing.html) contests, mainly done for practice.
